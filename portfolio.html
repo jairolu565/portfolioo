@@ -332,6 +332,8 @@ body.dark-mode nav a:hover {
     object-fit: cover;
     opacity: 0;
     transition: opacity 1s ease-in-out; /* O segredo do cross-dissolve está aqui */
+
+    will-change: opacity; /* Ajuda a melhorar a performance da animação */
 }
 
 .crossfade-container img.active {
@@ -936,7 +938,11 @@ nav.active .menu-item-5 {
     // === PRELOAD AGRESSIVO AO CARREGAR A PÁGINA ===
     function preloadAllImages() {
         console.log("Iniciando preload de todas as imagens...");
-        images.forEach(imgElement => {
+        
+        // NOVO: Agora ele busca imagens da Galeria E imagens do Crossfade (Sobre)
+        const allImages = document.querySelectorAll(".gallery img, .fade-img, .about-avatar");
+        
+        allImages.forEach(imgElement => {
             if(imgElement.src && !imgElement.src.includes('COLOQUE_A_URL_AQUI')) {
                 const img = new Image();
                 img.src = imgElement.src;
