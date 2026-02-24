@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
-   
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NK2LZ6CN0J"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -291,7 +291,7 @@ body.dark-mode nav a:hover {
 /* ==== INICIO: ESTILOS DAS CATEGORIAS COM CROSSFADE ==== */
 .categories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -497,7 +497,7 @@ nav.active .menu-item-5 {
 
 /* Estilos para telas menores (dentro do @media) */
 @media (max-width: 1000px) {
-   
+    
     /* Mostrar o botão do menu sanduíche */
     .menu-toggle {
         display: block;
@@ -517,7 +517,7 @@ nav.active .menu-item-5 {
         justify-content: center;
         align-items: center;
     }
-   
+    
     .social-containerr {
         display: flex;
         justify-content: center;
@@ -572,6 +572,18 @@ nav.active .menu-item-5 {
         opacity: 0;
         animation-fill-mode: forwards;
     }
+
+    /* Correção da aba "Sobre" no mobile */
+    .categories-grid {
+        grid-template-columns: 1fr; /* Coloca um item embaixo do outro */
+        gap: 40px; /* Espaçamento entre os blocos */
+    }
+
+    .categories-grid .crossfade-container {
+        max-width: 100%; /* Permite que a imagem ocupe a largura toda do celular */
+        height: auto; 
+        aspect-ratio: 1 / 1; /* Garante a proporção quadrada 1:1 exata */
+    }
 }
 
     </style>
@@ -601,7 +613,7 @@ nav.active .menu-item-5 {
         <a href="#" class="tab-link active menu-item-1" data-tab="home">Galeria</a>
         <a href="#" class="tab-link menu-item-2" data-tab="about">Sobre</a>
         <a href="#" class="tab-link menu-item-3" data-tab="contact">Contato</a>
-       
+        
         <div class="social-containerr">
             <div class="zapp menu-item-4">
                 <a href="https://wa.me/5571985245630?text=Olá,%20Jairo!%20Tenho%20interesse%20em%20contratar%20um%20serviço%20de%20fotografia." target="_blank">
@@ -619,30 +631,30 @@ nav.active .menu-item-5 {
             </div>
         </div>
     </nav>
-   
+    
     <div class="overlay" id="overlay"></div>
 
     <div class="content">
-       
+        
         <div id="home" class="tab-content active">
             <div class="gallery">
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/114037218684311.67a5203950db6.jpg" alt="Foto 1"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/2fc2ed218684311.67a52039512f2.jpg" alt="Foto 2"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/270bee218684311.67a5203953079.jpg" alt="Foto 3"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/7856f8218684311.69950a5de293d.jpg" alt="Foto 4"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/b8afd0218684311.67a5203952b94.jpg" alt="Foto 5"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/a6fff8218684311.69950a5de1496.jpg" alt="Foto 6"></div>
-                <div class="image-container"><img src="https://mir-cdn.behance.net/v1/rendition/project_modules/max_3840/db2511218684311.67a5203953789.jpg" alt="Foto 7"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/2d5dfb218684311.67a5203951825.jpg" alt="Foto 8"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/6bda85218684311.69950a5de33d5.jpg" alt="Foto 9"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/b59a8e218684311.69950a5de4a12.jpg" alt="Foto 10"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/2ccb7c218684311.69950a5de1dcb.jpg" alt="Foto 11"></div>
-                <div class="image-container"><img src="https://mir-cdn.behance.net/v1/rendition/project_modules/max_3840/8e8dfe218664167.67a4ddf165588.jpg" alt="Foto 12"></div>
-                <div class="image-container"><img src="https://mir-cdn.behance.net/v1/rendition/project_modules/max_3840/d49aa6218662219.67a4d7f289698.jpg" alt="Foto 13"></div>
-                <div class="image-container"><img src="https://mir-cdn.behance.net/v1/rendition/project_modules/max_3840/6371da218684311.67a5203952471.jpg" alt="Foto 14"></div>
-                <div class="image-container"><img src="https://mir-cdn.behance.net/v1/rendition/project_modules/max_3840/83c72e218684311.67a5203951d27.jpg" alt="Foto 15"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/544f68178552739.64e9fa5737b18.jpg" alt="Foto 16"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/ccbba0178552739.64e9fa5735e37.jpg" alt="Foto 17"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/114037218684311.67a5203950db6.jpg" alt="Foto 1"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2fc2ed218684311.67a52039512f2.jpg" alt="Foto 2"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/270bee218684311.67a5203953079.jpg" alt="Foto 3"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/7856f8218684311.69950a5de293d.jpg" alt="Foto 4"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b8afd0218684311.67a5203952b94.jpg" alt="Foto 5"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/a6fff8218684311.69950a5de1496.jpg" alt="Foto 6"></div>
+                <div class="image-container"><img src="https://mir-cdn.behance.net/v1/rendition/project_modules/1400/db2511218684311.67a5203953789.jpg" alt="Foto 7"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2d5dfb218684311.67a5203951825.jpg" alt="Foto 8"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6bda85218684311.69950a5de33d5.jpg" alt="Foto 9"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b59a8e218684311.69950a5de4a12.jpg" alt="Foto 10"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2ccb7c218684311.69950a5de1dcb.jpg" alt="Foto 11"></div>
+                <div class="image-container"><img src="https://mir-cdn.behance.net/v1/rendition/project_modules/1400/8e8dfe218664167.67a4ddf165588.jpg" alt="Foto 12"></div>
+                <div class="image-container"><img src="https://mir-cdn.behance.net/v1/rendition/project_modules/1400/d49aa6218662219.67a4d7f289698.jpg" alt="Foto 13"></div>
+                <div class="image-container"><img src="https://mir-cdn.behance.net/v1/rendition/project_modules/1400/6371da218684311.67a5203952471.jpg" alt="Foto 14"></div>
+                <div class="image-container"><img src="https://mir-cdn.behance.net/v1/rendition/project_modules/1400/83c72e218684311.67a5203951d27.jpg" alt="Foto 15"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/544f68178552739.64e9fa5737b18.jpg" alt="Foto 16"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/ccbba0178552739.64e9fa5735e37.jpg" alt="Foto 17"></div>
 
             </div>
         </div>
@@ -689,178 +701,217 @@ nav.active .menu-item-5 {
             <p class="animate-slide-up" style="text-align: center; font-size: 15px;">
                 Planos e pacotes de fotografia para ensaios individuais e em casal, casamentos, aniversários, eventos corporativos e muito mais. Consulte a aba de contato para solicitar um orçamento personalizado.
             </p>
-           
+            
             <div class="categories-grid">
-               
+                
                 <div class="category-item animate-slide-up">
                     <h3 class="category-title">Aniversários</h3>
                     <div class="crossfade-container">
                         <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/21e93e244395287.6996928579b57.jpg" class="fade-img active" alt="Aniversário 1">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/ce5d86244395287.6996928579638.jpg" class="fade-img" alt="Aniversário 2">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/d33cb8244395287.699692857af03.jpg" class="fade-img" alt="Aniversário 3">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ce5d86244395287.6996928579638.jpg" class="fade-img" alt="Aniversário 2">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d33cb8244395287.699692857af03.jpg" class="fade-img" alt="Aniversário 3">
                     </div>
                 </div>
-               
+                
                 <div class="category-item animate-slide-up">
                     <h3 class="category-title">Casamentos</h3>
                     <div class="crossfade-container">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/d49aa6218662219.67a4d7f289698.jpg" class="fade-img active" alt="Casamento 1">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/d4b69c178552739.64e9fa573a458.jpg" class="fade-img" alt="Casamento 2">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/544f68178552739.64e9fa5737b18.jpg" class="fade-img" alt="Casamento 3">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d4b69c178552739.64e9fa573a458.jpg" class="fade-img active" alt="Casamento 1">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/89014c244673083.699cf00d4bfc7.jpg" class="fade-img" alt="Casamento 2">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/92c444244673083.699cf00d4c5a8.jpg" class="fade-img" alt="Casamento 3">
                     </div>
                 </div>
 
                 <div class="category-item animate-slide-up">
                     <h3 class="category-title">Ensaios</h3>
                     <div class="crossfade-container">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/6fec8c218684311.6996790de6047.jpg" class="fade-img active" alt="Ensaio 1">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/225a41218664167.67a4dd5d539c0.jpg " class="fade-img" alt="Ensaio 2">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/bec31a244395287.699692857b5e3.jpg" class="fade-img" alt="Ensaio 3">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6fec8c218684311.6996790de6047.jpg" class="fade-img active" alt="Ensaio 1">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/225a41218664167.67a4dd5d539c0.jpg" class="fade-img" alt="Ensaio 2">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/67d84f244673187.699cf10981314.jpeg" class="fade-img" alt="Ensaio 3">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/237cae244673187.699cf10981b68.jpeg" class="fade-img" alt="Ensaio 4">
+                    </div>
+                </div>
+
+                <div class="category-item animate-slide-up">
+                    <h3 class="category-title">Eventos Esportivos</h3>
+                    <div class="crossfade-container">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/01ab45244673723.699cf52de5b73.jpg" class="fade-img active" alt="Evento Esportivo 1">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b87931244673723.699cf52de72ba.jpg" class="fade-img" alt="Evento Esportivo 2">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ef70cf244673723.699cf52de3a20.jpg" class="fade-img" alt="Evento Esportivo 3">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/067812244673723.699cf52de40be.jpg" class="fade-img" alt="Evento Esportivo 4">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e72645244673723.699cf52de61a0.jpg" class="fade-img" alt="Evento Esportivo 5">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/81b359244673723.699cf52de4b83.jpg" class="fade-img" alt="Evento Esportivo 6">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9c8c83244673723.699cf52de4650.jpg" class="fade-img" alt="Evento Esportivo 7">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b0795c244673723.699cf52de6a42.jpg" class="fade-img" alt="Evento Esportivo 8">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f5a50f244673723.699cf52de52f3.jpg" class="fade-img" alt="Evento Esportivo 9">
+
+                    </div>
+                </div>
+
+                <div class="category-item animate-slide-up">
+                    <h3 class="category-title">Eventos Religiosos</h3>
+                    <div class="crossfade-container">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c8635c176386809.64c3b770243e3.jpeg" class="fade-img active" alt="Evento Religioso 1">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/754f99244395287.699692857baa9.jpg" class="fade-img" alt="Evento Religioso 2">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/71ec7d176386809.64c3b770222ed.jpeg" class="fade-img" alt="Evento Religioso 3">
+                    </div>
+                </div>
+
+                <div class="category-item animate-slide-up">
+                    <h3 class="category-title">Pets</h3>
+                    <div class="crossfade-container">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/83b555244674295.699cfeba9ae98.jpg" class="fade-img active" alt="Pets 1">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/be1c04244674295.699cfeba99319.jpg" class="fade-img" alt="Pets 2">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e8766c244674295.699cfeba9a044.jpg" class="fade-img" alt="Pets 3">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/c5611b244674295.699d0088a2201.jpg" class="fade-img" alt="Pets 4">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1527f0244674295.699cfeba999c3.jpg" class="fade-img" alt="Pets 5">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/bc2e47244674295.699d0088a19b1.jpg" class="fade-img" alt="Pets 6">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/3b3942244674295.699cfeba9a83f.jpg" class="fade-img" alt="Pets 7">
                     </div>
                 </div>
 
             </div>
             </div>
-       
+        
     </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const tabLinks = document.querySelectorAll('.tab-link');
+    const tabLinks = document.querySelectorAll('.tab-link');
 
-            // Nova Função que aplica a classe de animação dependendo da aba
-            function triggerAnimation(tabId = 'home') {
-                let selector = '';
-               
-                // Define quais elementos animar baseado na aba
-                if (tabId === 'home') selector = '.gallery .image-container';
-                if (tabId === 'about') selector = '#about .animate-slide-up';
-                if (tabId === 'contact') selector = '#contact .animate-slide-up';
+    // Nova Função que aplica a classe de animação dependendo da aba
+    function triggerAnimation(tabId = 'home') {
+        let selector = '';
+        
+        // Define quais elementos animar baseado na aba
+        if (tabId === 'home') selector = '.gallery .image-container';
+        if (tabId === 'about') selector = '#about .animate-slide-up';
+        if (tabId === 'contact') selector = '#contact .animate-slide-up';
 
-                if (!selector) return;
+        if (!selector) return;
 
-                const elements = document.querySelectorAll(selector);
-               
-                elements.forEach((el, index) => {
-                    // Reseta a animação para permitir rodar novamente ao trocar abas
-                    el.style.animation = 'none';
-                    el.offsetHeight; /* hack para forçar o navegador a notar a mudança */
-                   
-                    // Aplica a animação em cascata (delay calculado pelo index)
-                    el.style.animation = `slideUpFade 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards ${index * 0.1}s`;
-                });
-            }
-
-            // Função que espera tudo carregar
-            function initGallery() {
-                const images = document.querySelectorAll('.gallery img');
-               
-                const promises = Array.from(images).map(img => {
-                    if (img.complete) return Promise.resolve();
-                    return new Promise(resolve => {
-                        img.onload = resolve;
-                        img.onerror = resolve;
-                    });
-                });
-
-                Promise.all(promises).then(() => {
-                    setTimeout(() => {
-                        triggerAnimation('home');
-                    }, 100);
-                });
-            }
-
-            // Roda ao iniciar
-            initGallery();
-
-            // Lógica das abas
-            tabLinks.forEach(link => {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault();
-                   
-                    tabLinks.forEach(item => item.classList.remove('active-tab'));
-                    this.classList.add('active-tab');
-                    document.querySelectorAll('.tab-content').forEach(item => item.classList.remove('active'));
-                    const tabId = this.getAttribute('data-tab');
-                    document.getElementById(tabId).classList.add('active');
-
-                    // RODA A ANIMAÇÃO PARA A ABA CLICADA
-                    triggerAnimation(tabId);
-
-                    // --- GA4: Rastreamento de Abas (Páginas Virtuais) ---
-                    if (typeof gtag === 'function') {
-                        gtag('event', 'page_view', {
-                            page_title: tabId,
-                            page_location: window.location.href + '#' + tabId,
-                            page_path: '/' + tabId
-                        });
-                    }
-                });
-            });
-
-            // Ativar a aba inicial (Galeria) ao carregar a página
-            const initialTab = document.querySelector('.tab-link.active');
-            if (initialTab) {
-                initialTab.classList.add('active-tab');
-                const initialTabId = initialTab.getAttribute('data-tab');
-                document.getElementById(initialTabId).classList.add('active');
-            }
+        const elements = document.querySelectorAll(selector);
+        
+        elements.forEach((el, index) => {
+            // Reseta a animação para permitir rodar novamente ao trocar abas
+            el.style.animation = 'none';
+            el.offsetHeight; /* hack para forçar o navegador a notar a mudança */
+            
+            // Aplica a animação em cascata (delay calculado pelo index)
+            el.style.animation = `slideUpFade 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards ${index * 0.1}s`;
         });
+    }
 
-        // ====== LÓGICA DO CROSSFADE (FADE-IN / FADE-OUT) ======
-        document.addEventListener("DOMContentLoaded", function () {
-            const crossfadeContainers = document.querySelectorAll('.crossfade-container');
-           
-            crossfadeContainers.forEach(container => {
-                const images = container.querySelectorAll('.fade-img');
-                let current = 0;
-                const total = images.length;
-               
-                if(total > 1) {
-                    setInterval(() => {
-                        // Remove a classe 'active' da imagem atual
-                        images[current].classList.remove('active');
-                       
-                        // Vai para a próxima (voltando ao zero se chegar no fim)
-                        current = (current + 1) % total;
-                       
-                        // Adiciona a classe 'active' na nova imagem
-                        images[current].classList.add('active');
-                    }, 3000); // 3000ms = 3 segundos
-                }
+    // Função que espera tudo carregar
+    function initGallery() {
+        const images = document.querySelectorAll('.gallery img');
+        
+        const promises = Array.from(images).map(img => {
+            if (img.complete) return Promise.resolve();
+            return new Promise(resolve => {
+                img.onload = resolve;
+                img.onerror = resolve;
             });
         });
-        // =======================================================
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const themeToggle = document.getElementById('theme-toggle');
-            const body = document.body;
+        Promise.all(promises).then(() => {
+            setTimeout(() => {
+                triggerAnimation('home');
+            }, 100);
+        });
+    }
 
-            themeToggle.addEventListener('click', () => {
-                body.classList.toggle('dark-mode');
-                const isDarkMode = body.classList.contains('dark-mode');
-                localStorage.setItem('dark-mode', isDarkMode);
-                updateToggleIcon(isDarkMode);
-            });
+    // Roda ao iniciar
+    initGallery();
 
-            const savedDarkMode = localStorage.getItem('dark-mode') === 'true';
-            if (savedDarkMode) {
-                body.classList.add('dark-mode');
-            }
-            updateToggleIcon(savedDarkMode);
+    // Lógica das abas
+    tabLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            tabLinks.forEach(item => item.classList.remove('active-tab'));
+            this.classList.add('active-tab');
+            document.querySelectorAll('.tab-content').forEach(item => item.classList.remove('active'));
+            const tabId = this.getAttribute('data-tab');
+            document.getElementById(tabId).classList.add('active');
 
-            function updateToggleIcon(isDarkMode) {
-                const icon = themeToggle.querySelector('svg');
-                if (isDarkMode) {
-                    icon.innerHTML = '<path d="M12 2c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm0 2v16a8 8 0 1 0 0-16z"/>'; // Ícone de lua
-                } else {
-                    icon.innerHTML = '<path d="M12 2c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm0 2v16a8 8 0 1 0 0-16z"/>'; // Ícone de sol
-                }
+            // RODA A ANIMAÇÃO PARA A ABA CLICADA
+            triggerAnimation(tabId);
+
+            // --- GA4: Rastreamento de Abas (Páginas Virtuais) ---
+            if (typeof gtag === 'function') {
+                gtag('event', 'page_view', {
+                    page_title: tabId,
+                    page_location: window.location.href + '#' + tabId,
+                    page_path: '/' + tabId
+                });
             }
         });
-       
+    });
 
-        document.addEventListener("DOMContentLoaded", function () {
+    // Ativar a aba inicial (Galeria) ao carregar a página
+    const initialTab = document.querySelector('.tab-link.active');
+    if (initialTab) {
+        initialTab.classList.add('active-tab');
+        const initialTabId = initialTab.getAttribute('data-tab');
+        document.getElementById(initialTabId).classList.add('active');
+    }
+});
+
+// ====== LÓGICA DO CROSSFADE (FADE-IN / FADE-OUT) ======
+document.addEventListener("DOMContentLoaded", function () {
+    const crossfadeContainers = document.querySelectorAll('.crossfade-container');
+    
+    crossfadeContainers.forEach(container => {
+        const images = container.querySelectorAll('.fade-img');
+        let current = 0;
+        const total = images.length;
+        
+        if(total > 1) {
+            setInterval(() => {
+                // Remove a classe 'active' da imagem atual
+                images[current].classList.remove('active');
+                
+                // Vai para a próxima (voltando ao zero se chegar no fim)
+                current = (current + 1) % total;
+                
+                // Adiciona a classe 'active' na nova imagem
+                images[current].classList.add('active');
+            }, 3000); // 3000ms = 3 segundos
+        }
+    });
+});
+// =======================================================
+
+document.addEventListener("DOMContentLoaded", function () {
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        const isDarkMode = body.classList.contains('dark-mode');
+        localStorage.setItem('dark-mode', isDarkMode);
+        updateToggleIcon(isDarkMode);
+    });
+
+    const savedDarkMode = localStorage.getItem('dark-mode') === 'true';
+    if (savedDarkMode) {
+        body.classList.add('dark-mode');
+    }
+    updateToggleIcon(savedDarkMode);
+
+    function updateToggleIcon(isDarkMode) {
+        const icon = themeToggle.querySelector('svg');
+        if (isDarkMode) {
+            icon.innerHTML = '<path d="M12 2c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm0 2v16a8 8 0 1 0 0-16z"/>'; // Ícone de lua
+        } else {
+            icon.innerHTML = '<path d="M12 2c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm0 2v16a8 8 0 1 0 0-16z"/>'; // Ícone de sol
+        }
+    }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById('menu-toggle');
     const navMenu = document.getElementById('nav-menu');
     const overlay = document.getElementById('overlay');
@@ -907,9 +958,13 @@ nav.active .menu-item-5 {
         link.addEventListener('click', closeMenuWithAnimation);
     });
 
+    // ==========================================
+    // === LÓGICA ATUALIZADA DO MODAL / CARROSSEL ===
+    // ==========================================
+    
+    // Variável dinâmica que guardará qual galeria está aberta no momento
+    let currentCarouselImages = []; 
 
-
-    const images = document.querySelectorAll(".gallery img");
     const modal = document.createElement("div");
     modal.classList.add("modal");
     modal.innerHTML = `
@@ -926,7 +981,7 @@ nav.active .menu-item-5 {
     const closeButton = modal.querySelector(".close");
     const prevButton = modal.querySelector(".prev");
     const nextButton = modal.querySelector(".next");
-    const loader = modal.querySelector(".loader"); // Referência ao loader
+    const loader = modal.querySelector(".loader");
     let currentIndex = 0;
     const body = document.body;
     const backgroundBlur = document.createElement("div");
@@ -936,8 +991,6 @@ nav.active .menu-item-5 {
     // === PRELOAD AGRESSIVO AO CARREGAR A PÁGINA ===
     function preloadAllImages() {
         console.log("Iniciando preload de todas as imagens...");
-        
-        // NOVO: Agora ele busca imagens da Galeria E imagens do Crossfade (Sobre)
         const allImages = document.querySelectorAll(".gallery img, .fade-img, .about-avatar");
         
         allImages.forEach(imgElement => {
@@ -947,28 +1000,27 @@ nav.active .menu-item-5 {
             }
         });
     }
-    // Chama assim que o script roda
     preloadAllImages();
 
-    function openModal(index) {
+    // Modificamos a função para receber o array de imagens da categoria clicada
+    function openModal(index, imageArray) {
+        currentCarouselImages = imageArray; 
         currentIndex = index;
-       
-        // Mostra loader enquanto imagem não carrega (caso raro com preload)
+        
         loader.style.display = "block";
-        modalImg.style.display = "none"; // Esconde imagem até carregar
-       
+        modalImg.style.display = "none"; 
+        
         modalImg.onload = function() {
             loader.style.display = "none";
             modalImg.style.display = "block";
         };
 
-        modalImg.src = images[currentIndex].src;
-       
-        // --- SEGURANÇA: Limpa classes e garante que a imagem esteja visível ---
+        modalImg.src = currentCarouselImages[currentIndex].src;
+        
         modalImg.classList.remove('slide-out-left', 'slide-out-right', 'preparing-slide-in-left', 'preparing-slide-in-right');
         modalImg.style.opacity = '1';
         modalImg.style.transform = 'translateX(0)';
-       
+        
         modal.style.display = "flex";
         backgroundBlur.style.display = "block";
         setTimeout(() => {
@@ -989,64 +1041,50 @@ nav.active .menu-item-5 {
     let isAnimating = false;
 
     function showNext() {
-        if (isAnimating) return;
+        if (isAnimating || currentCarouselImages.length <= 1) return;
         isAnimating = true;
 
         modalImg.style.opacity = '';
         modalImg.style.transform = '';
-
-        // 1. Anima a saída
         modalImg.classList.add('slide-out-left');
 
-        // MUDANÇA: Tempo reduzido para 150ms (muito mais rápido)
         setTimeout(() => {
-            // 2. Troca a imagem
-            currentIndex = (currentIndex + 1) % images.length;
-           
-            // Lógica de loader simples na troca
+            currentIndex = (currentIndex + 1) % currentCarouselImages.length;
+            
             const tempImg = new Image();
-            tempImg.src = images[currentIndex].src;
+            tempImg.src = currentCarouselImages[currentIndex].src;
             if(!tempImg.complete) {
                 loader.style.display = "block";
-                modalImg.style.opacity = "0"; // Mantém invisível enquanto carrega
+                modalImg.style.opacity = "0"; 
             } else {
                  loader.style.display = "none";
             }
-           
-            modalImg.src = images[currentIndex].src;
+            
+            modalImg.src = currentCarouselImages[currentIndex].src;
 
-            // 3. Prepara a entrada
             modalImg.classList.remove('slide-out-left');
             modalImg.classList.add('preparing-slide-in-right');
-
             void modalImg.offsetWidth;
-
-            // 4. Anima a entrada
             modalImg.classList.remove('preparing-slide-in-right');
-            modalImg.style.opacity = "1"; // Garante visibilidade
-           
+            modalImg.style.opacity = "1"; 
+            
             isAnimating = false;
-        }, 300); // MUDANÇA: Espera apenas 150ms
+        }, 150); 
     }
 
     function showPrev() {
-        if (isAnimating) return;
+        if (isAnimating || currentCarouselImages.length <= 1) return;
         isAnimating = true;
 
         modalImg.style.opacity = '';
         modalImg.style.transform = '';
-
-        // 1. Anima a saída
         modalImg.classList.add('slide-out-right');
 
-        // MUDANÇA: Tempo reduzido para 150ms
         setTimeout(() => {
-            // 2. Troca a imagem
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-           
-             // Lógica de loader simples na troca
+            currentIndex = (currentIndex - 1 + currentCarouselImages.length) % currentCarouselImages.length;
+            
             const tempImg = new Image();
-            tempImg.src = images[currentIndex].src;
+            tempImg.src = currentCarouselImages[currentIndex].src;
             if(!tempImg.complete) {
                  loader.style.display = "block";
                  modalImg.style.opacity = "0";
@@ -1054,40 +1092,68 @@ nav.active .menu-item-5 {
                  loader.style.display = "none";
             }
 
-            modalImg.src = images[currentIndex].src;
+            modalImg.src = currentCarouselImages[currentIndex].src;
 
-            // 3. Prepara a entrada
             modalImg.classList.remove('slide-out-right');
             modalImg.classList.add('preparing-slide-in-left');
-
             void modalImg.offsetWidth;
-
-            // 4. Anima a entrada
             modalImg.classList.remove('preparing-slide-in-left');
             modalImg.style.opacity = "1";
-           
+            
             isAnimating = false;
-        }, 300); // MUDANÇA: Espera apenas 150ms
+        }, 150); 
     }
 
-    images.forEach((img, index) => {
+    // 1. EVENTOS DE CLIQUE: GALERIA PRINCIPAL
+    const mainGalleryImages = document.querySelectorAll(".gallery img");
+    mainGalleryImages.forEach((img, index) => {
         img.addEventListener("click", () => {
-            openModal(index);
-           
-            // --- GA4: Rastreamento de Cliques na Foto ---
+            openModal(index, Array.from(mainGalleryImages));
+            
             if (typeof gtag === 'function') {
                 gtag('event', 'visualizar_foto', {
-                    foto_numero: index + 1, // Ex: 1, 2, 3...
+                    foto_numero: index + 1,
                     foto_url: img.src
                 });
             }
-            // --------------------------------------------
         });
         img.style.cursor = "pointer";
     });
+
+    // 2. EVENTOS DE CLIQUE: CATEGORIAS (ABA SOBRE)
+    const crossfadeContainersModal = document.querySelectorAll('.crossfade-container');
+    crossfadeContainersModal.forEach(container => {
+        container.style.cursor = "pointer"; // Deixa a caixa inteira com cursor de clique
+        const categoryImages = Array.from(container.querySelectorAll('.fade-img'));
+        
+        container.addEventListener("click", () => {
+            // Descobre qual imagem está aparecendo na tela no momento do clique
+            let activeIndex = categoryImages.findIndex(img => img.classList.contains('active'));
+            if (activeIndex === -1) activeIndex = 0; // fallback de segurança
+            
+            // Abre o modal passando apenas as imagens desta categoria específica
+            openModal(activeIndex, categoryImages);
+            
+            if (typeof gtag === 'function') {
+                gtag('event', 'visualizar_foto_categoria', {
+                    foto_numero: activeIndex + 1,
+                    foto_url: categoryImages[activeIndex].src
+                });
+            }
+        });
+    });
+
     closeButton.addEventListener("click", closeModal);
     nextButton.addEventListener("click", showNext);
     prevButton.addEventListener("click", showPrev);
+
+    document.addEventListener("keydown", (e) => {
+        if (modal.style.display === "flex") {
+            if (e.key === "ArrowRight") showNext();
+            else if (e.key === "ArrowLeft") showPrev();
+            else if (e.key === "Escape") closeModal();
+        }
+    });
 
     modal.addEventListener("click", (e) => {
         if (e.target === modal) closeModal();
@@ -1106,11 +1172,9 @@ nav.active .menu-item-5 {
 
     modal.addEventListener("touchend", (e) => {
         if (startX === null) return;
-
         let endX = e.changedTouches[0].clientX;
         if (startX - endX > 50) showNext();
         if (endX - startX > 50) showPrev();
-       
         startX = null;
     });
 });
@@ -1118,7 +1182,7 @@ nav.active .menu-item-5 {
 const style = document.createElement("style");
 style.innerHTML = `
     /* --- CSS CRITICO PARA A ANIMAÇÃO --- */
-   
+    
     /* 1. Garante que o container da imagem nasça invisível e deslocado para baixo */
     .gallery .image-container,
     .animate-slide-up {
@@ -1255,11 +1319,29 @@ style.innerHTML = `
     .gallery img {
         cursor: pointer;
     }
-   
+    
     /* Media Query para esconder setas no mobile */
     @media (max-width: 1000px) {
         .prev, .next {
             display: none !important;
+        }
+    }
+
+    /* ================================================== */
+    /* NOVO: ESTILOS EXCLUSIVOS PARA PC (FADE IN/OUT)     */
+    /* ================================================== */
+    @media (min-width: 1001px) {
+        .modal-img {
+            transition: opacity 0.25s ease-in-out !important; /* Transição suave de opacidade */
+            transform: none !important; /* Remove o comportamento padrão de arrasto no eixo X */
+        }
+        
+        .modal-img.slide-out-left,
+        .modal-img.slide-out-right,
+        .modal-img.preparing-slide-in-left,
+        .modal-img.preparing-slide-in-right {
+            transform: none !important; /* Garante que a imagem não deslize */
+            opacity: 0 !important;      /* Apenas faz a imagem sumir */
         }
     }
 `;
