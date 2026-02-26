@@ -14,26 +14,26 @@
       // Registra o carregamento inicial do site
       gtag('config', 'G-NK2LZ6CN0J');
     </script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"></noscript>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"></noscript>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
     <style>
 
-        /* Estilos gerais do corpo */
+        /* Estilos gerais do corpo - AGORA COM JOSEFIN SLAB */
 body {
-    font-family: 'Outfit', serif;
+    font-family: 'Josefin Slab', serif; /* Alterado */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #ffffff;
     color: #000000;
     transition: background-color 0.3s, color 0.3s;
+    font-weight: 400; /* Ajuste para leitura */
 }
 
 body.dark-mode {
@@ -53,7 +53,9 @@ body.dark-mode header {
     background-color: #1e1e1e;
 }
 
+/* TÍTULO MANTIDO COM A FONTE OUTFIT */
 header h1 {
+    font-family: 'Outfit', sans-serif; /* Mantido Outfit */
     margin: 0;
     font-size: 2.5em;
     font-weight: 400;
@@ -154,7 +156,7 @@ body.dark-mode .zap svg {
     font-size: 24px;
     color: #000000;
     transition: color 0.3s;
-    z-index: 1002; /* Garante que o botão fique acima do menu */
+    z-index: 1002; 
 }
 
 body.dark-mode .theme-toggle {
@@ -163,7 +165,7 @@ body.dark-mode .theme-toggle {
 
 /* Botão do menu sanduíche */
 .menu-toggle {
-    display: none; /* Escondido por padrão */
+    display: none; 
     position: absolute;
     top: 20px;
     left: 20px;
@@ -179,21 +181,23 @@ body.dark-mode .menu-toggle {
     color: #ffffff;
 }
 
-/* Estilos do menu de navegação (padrão para desktop) */
+/* Estilos do menu de navegação - AGORA COM JOSEFIN SLAB */
 nav {
     display: flex;
     justify-content: center;
     background-color: #ffffff;
     flex-wrap: wrap;
     transition: background-color 0.3s;
-    font-family: 'Roboto Serif', serif;
+    font-family: 'Josefin Slab', serif; /* Alterado */
+    font-weight: 600; /* Um pouco mais de peso para destaque */
+    letter-spacing: 0.5px;
 }
 
 /* Estilo para o link ativo na navegação */
 nav a.active-tab {
-    border-bottom: 2px solid #c5c5c5; /* Sublinhado azul */
-    color: rgb(185, 185, 185); /* Cor do texto */
-    font-weight: bold; /* Texto em negrito */
+    border-bottom: 2px solid #c5c5c5; 
+    color: rgb(185, 185, 185); 
+    font-weight: bold; 
 }
 
 body.dark-mode nav {
@@ -206,6 +210,7 @@ nav a {
     text-decoration: none;
     text-align: center;
     transition: color 0.3s, background-color 0.3s;
+    font-size: 1.1em; /* Ajuste leve no tamanho */
 }
 
 body.dark-mode nav a {
@@ -329,13 +334,13 @@ body.dark-mode nav a:hover {
     height: 100%;
     object-fit: cover;
     opacity: 0;
-    transition: opacity 1s ease-in-out; /* O segredo do cross-dissolve está aqui */
+    transition: opacity 1s ease-in-out; 
 
-    will-change: opacity; /* Ajuda a melhorar a performance da animação */
+    will-change: opacity; 
 }
 
 .crossfade-container img.active {
-    opacity: 1; /* Imagem visível */
+    opacity: 1; 
 }
 /* ==== FIM: ESTILOS DAS CATEGORIAS COM CROSSFADE ==== */
 
@@ -357,6 +362,8 @@ body.dark-mode nav a:hover {
     background-color: #ffffff;
     color: #000000;
     transition: background-color 0.3s, color 0.3s;
+    font-family: 'Josefin Slab', serif; /* Garante a fonte no input */
+    font-size: 1rem;
 }
 
 body.dark-mode .contact-form input,
@@ -373,6 +380,9 @@ body.dark-mode .contact-form textarea {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Josefin Slab', serif; /* Garante a fonte no botão */
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .contact-form button:hover {
@@ -390,7 +400,7 @@ body.dark-mode .contact-form textarea {
     font-size: 24px;
     color: #000000;
     transition: color 0.3s;
-    z-index: 1001; /* Garante que o botão fique acima do menu */
+    z-index: 1001; 
 }
 
 body.dark-mode .close-menu {
@@ -420,29 +430,29 @@ body.dark-mode .close-menu {
 .menu-item-3,
 .menu-item-4,
 .menu-item-5 {
-    opacity: 0; /* Inicia invisível */
+    opacity: 0; 
     animation: slideInMenu 0.5s ease-out forwards;
 }
 
 /* Delays para cada item do menu */
 .menu-item-1 {
-    animation-delay: 0.05s; /* Primeiro item */
+    animation-delay: 0.05s; 
 }
 
 .menu-item-2 {
-    animation-delay: 0.13s; /* Segundo item */
+    animation-delay: 0.13s; 
 }
 
 .menu-item-3 {
-    animation-delay: 0.21s; /* Terceiro item */
+    animation-delay: 0.21s; 
 }
 
 .menu-item-4 {
-    animation-delay: 0.29s; /* Quarto item */
+    animation-delay: 0.29s; 
 }
 
 .menu-item-5 {
-    animation-delay: 0.37s; /* Quinto item */
+    animation-delay: 0.37s; 
 }
 
 /* Aplicar animação apenas quando o menu estiver aberto */
@@ -584,8 +594,46 @@ nav.active .menu-item-5 {
         height: auto; 
         aspect-ratio: 1 / 1; /* Garante a proporção quadrada 1:1 exata */
     }
+
+}
+.email-display {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
+.email-display h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.email-display a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.email-display a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Ajuste para o modo escuro */
+body.dark-mode .email-display h3 {
+    color: #fff;
+}
+
+body.dark-mode .email-display a {
+    color: #ccc;
+}
+
+body.dark-mode .email-display a:hover {
+    color: #fff;
+}
     </style>
 </head>
 
@@ -644,39 +692,49 @@ nav.active .menu-item-5 {
                 <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/a6fff8218684311.69950a5de1496.jpg" alt="Foto 4"></div>
                 <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2d5dfb218684311.67a5203951825.jpg" alt="Foto 5"></div>
                 <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6bda85218684311.69950a5de33d5.jpg" alt="Foto 6"></div>
-                <div class="image-container"><img src="https://mir-cdn.behance.net/v1/rendition/project_modules/1400/8e8dfe218664167.67a4ddf165588.jpg" alt="Foto 7"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f0d017244673187.699e5b8493013.jpg" alt="Foto 8"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9b925a244673187.699e5b848f88e.jpg" alt="Foto 9"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/592199244673187.699e5b84913c3.jpg" alt="Foto 10"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/330e34244673187.699e5b84920cc.jpg" alt="Foto 11"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/27aa5a178550877.64e9f1ca018eb.jpg" alt="Foto 12"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d49aa6218662219.67a4d7f289698.jpg" alt="Foto 13"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/5f76ab244673083.699e5e56adf0c.jpg" alt="Foto 14"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/8a94f4244673083.699e5e56ac3a2.jpg" alt="Foto 15"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fbd9c6244673083.699e5e56ad45f.jpg" alt="Foto 16"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/362d94244673083.699e5e56ac88e.jpg" alt="Foto 17"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/45bd00244673083.699e5e56acf5a.jpg" alt="Foto 18"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e51e3d244673187.699e5b848f0a2.jpg" alt="Foto 19"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fc3729244673187.699e5b8490da1.jpg" alt="Foto 20"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6e3d97244673187.699e5b8492869.jpg" alt="Foto 21"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ba6fa2244673187.699e5b8491b27.jpg" alt="Foto 22"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/21e93e244395287.6996928579b57.jpg" alt="Foto 7"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d33cb8244395287.699692857af03.jpg" alt="Foto 8"></div>
+                <div class="image-container"><img src="https://mir-cdn.behance.net/v1/rendition/project_modules/1400/8e8dfe218664167.67a4ddf165588.jpg" alt="Foto 9"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f0d017244673187.699e5b8493013.jpg" alt="Foto 10"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9b925a244673187.699e5b848f88e.jpg" alt="Foto 11"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/592199244673187.699e5b84913c3.jpg" alt="Foto 12"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/330e34244673187.699e5b84920cc.jpg" alt="Foto 13"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/27aa5a178550877.64e9f1ca018eb.jpg" alt="Foto 14"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d49aa6218662219.67a4d7f289698.jpg" alt="Foto 15"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/5f76ab244673083.699e5e56adf0c.jpg" alt="Foto 16"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/8a94f4244673083.699e5e56ac3a2.jpg" alt="Foto 17"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fbd9c6244673083.699e5e56ad45f.jpg" alt="Foto 18"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/362d94244673083.699e5e56ac88e.jpg" alt="Foto 19"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/45bd00244673083.699e5e56acf5a.jpg" alt="Foto 20"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e51e3d244673187.699e5b848f0a2.jpg" alt="Foto 21"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fc3729244673187.699e5b8490da1.jpg" alt="Foto 22"></div>
                 <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/5e30b7244673187.699e5b8490072.jpg" alt="Foto 23"></div>
                 <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/caad04244673187.699e5b8490816.jpg" alt="Foto 24"></div>
-                <div class="image-container"><img src="https://mir-cdn.behance.net/v1/rendition/project_modules/1400/83c72e218684311.67a5203951d27.jpg" alt="Foto 25"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ca1755244673187.699e6a69bc454.jpg" alt="Foto 26"></div>
-                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4a3e1f244673187.699e6a69bc9ab.jpg" alt="Foto 27"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e72645244673723.699cf52de61a0.jpg" alt="Foto 25"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ef70cf244673723.699cf52de3a20.jpg" alt="Foto 26"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9c8c83244673723.699cf52de4650.jpg" alt="Foto 27"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b0795c244673723.699cf52de6a42.jpg" alt="Foto 28"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b87f7e244673723.699f89f0713f2.jpg" alt="Foto 29"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d09c68244673723.699f89f071d65.jpg" alt="Foto 30"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ca1755244673187.699e6a69bc454.jpg" alt="Foto 34"></div>
+                <div class="image-container"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4a3e1f244673187.699e6a69bc9ab.jpg" alt="Foto 35"></div>
+                <div class="image-container"><img src="https://mir-cdn.behance.net/v1/rendition/project_modules/1400/83c72e218684311.67a5203951d27.jpg" alt="Foto 36"></div>
 
             </div>
         </div>
 
         <div id="contact" class="tab-content">
+
             <form id="form-contato" class="contact-form">
-                <input type="text" id="form-nome" placeholder="Seu nome" class="animate-slide-up" required>
-                <input type="text" id="form-info" placeholder="Seu telefone com DDD" class="animate-slide-up" required>
-                <textarea id="form-mensagem" rows="5" placeholder="Olá! Tenho interesse em contratar um serviço de fotografia." class="animate-slide-up" required></textarea>
+                <input type="text" id="form-nome" placeholder="Seu nome*" class="animate-slide-up" required>
+                <input type="text" id="form-info" placeholder="Seu e-mail ou seu telefone com DDD*" class="animate-slide-up" required>
+                <textarea id="form-mensagem" rows="5" placeholder="Olá! Tenho interesse em contratar um serviço de fotografia." class="animate-slide-up"></textarea>
                 <button type="submit" class="animate-slide-up">Enviar</button>
             </form>
-            
+            <div class="email-display animate-slide-up">
+                <h3>E-mail</h3>
+                <a href="mailto:jairolu565@gmail.com">jairolu565@gmail.com</a>
+            </div>
             <div class="social-container animate-slide-up">
                 <div class="zap">
                     <a href="https://wa.me/5571985245630?text=Olá,%20Jairo!%20Tenho%20interesse%20em%20contratar%20um%20serviço%20de%20fotografia." target="_blank">
@@ -701,15 +759,15 @@ nav.active .menu-item-5 {
             </div>
             <div class="animate-slide-up" style="display: flex; align-items: center; justify-content: center;">
                 <div style="text-align: center;">
-                    <p style="font-size: 25px; font-weight: 600; margin: 0; align-items: center;">Jairo Luigi de Oliveira</p>
+                    <p style="font-size: 25px; font-weight: 600; margin: 4px; align-items: center;">Jairo Luigi de Oliveira</p>
                 </div>
             </div>
             <div class="animate-slide-up" style="display: flex; align-items: center; justify-content: center;">
                 <div style="text-align: center;">
-                    <p style="margin: 0;">São Paulo, SP - Brasil</p>
+                    <p style="margin: 0; font-size: 14px;">São Paulo, SP - Brasil</p>
                 </div>
             </div>
-            <p class="animate-slide-up" style="text-align: center; font-size: 15px;">
+            <p class="animate-slide-up" style="text-align: center; font-size: 18px; font-weight: 500;">
                 Planos e pacotes de fotografia para ensaios individuais e em casal, casamentos, aniversários, eventos corporativos e muito mais. Consulte a aba de contato para solicitar um orçamento personalizado.
             </p>
             
@@ -718,9 +776,9 @@ nav.active .menu-item-5 {
                 <div class="category-item animate-slide-up">
                     <h3 class="category-title">Aniversários</h3>
                     <div class="crossfade-container">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/21e93e244395287.6996928579b57.jpg" class="fade-img active" alt="Aniversário 1">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/269bf9244673187.699fa050297db.jpg" class="fade-img active" alt="Aniversário 1">
                         <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ce5d86244395287.6996928579638.jpg" class="fade-img" alt="Aniversário 2">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d33cb8244395287.699692857af03.jpg" class="fade-img" alt="Aniversário 3">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2078fc244673187.699fa05029e8c.jpg" class="fade-img" alt="Aniversário 3">
                     </div>
                 </div>
                 
@@ -748,13 +806,9 @@ nav.active .menu-item-5 {
                     <div class="crossfade-container">
                         <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/01ab45244673723.699cf52de5b73.jpg" class="fade-img active" alt="Evento Esportivo 1">
                         <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b87931244673723.699cf52de72ba.jpg" class="fade-img" alt="Evento Esportivo 2">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ef70cf244673723.699cf52de3a20.jpg" class="fade-img" alt="Evento Esportivo 3">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/067812244673723.699cf52de40be.jpg" class="fade-img" alt="Evento Esportivo 4">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e72645244673723.699cf52de61a0.jpg" class="fade-img" alt="Evento Esportivo 5">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/81b359244673723.699cf52de4b83.jpg" class="fade-img" alt="Evento Esportivo 6">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9c8c83244673723.699cf52de4650.jpg" class="fade-img" alt="Evento Esportivo 7">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b0795c244673723.699cf52de6a42.jpg" class="fade-img" alt="Evento Esportivo 8">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f5a50f244673723.699cf52de52f3.jpg" class="fade-img" alt="Evento Esportivo 9">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/067812244673723.699cf52de40be.jpg" class="fade-img" alt="Evento Esportivo 3">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/81b359244673723.699cf52de4b83.jpg" class="fade-img" alt="Evento Esportivo 4">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f5a50f244673723.699cf52de52f3.jpg" class="fade-img" alt="Evento Esportivo 5">
 
                     </div>
                 </div>
@@ -935,19 +989,26 @@ document.addEventListener("DOMContentLoaded", function () {
         formContato.addEventListener("submit", function (e) {
             e.preventDefault(); // Impede a página de recarregar
 
-            // Captura os valores digitados
+            // Captura os elementos
             const nome = document.getElementById("form-nome").value;
             const infoContato = document.getElementById("form-info").value;
-            const mensagem = document.getElementById("form-mensagem").value;
+            const mensagemElement = document.getElementById("form-mensagem");
 
-            // ⚠️ COLOQUE SEU E-MAIL AQUI ⚠️
+            // Lógica Inteligente:
+            // Pega o que foi escrito. Se estiver vazio, pega o texto do placeholder.
+            let mensagem = mensagemElement.value;
+            if (!mensagem || mensagem.trim() === "") {
+                mensagem = mensagemElement.getAttribute("placeholder");
+            }
+
+            // ⚠️ SEU E-MAIL ⚠️
             const emailDestino = "jairolu565@gmail.com"; 
 
             // Monta o assunto e o corpo do e-mail
             const assunto = encodeURIComponent(`Novo contato pelo portfólio - ${nome}`);
             const corpo = encodeURIComponent(`Nome: ${nome}\nContato: ${infoContato}\n\nMensagem:\n${mensagem}`);
 
-            // Chama a função mailto para abrir o app de e-mail do usuário
+            // Chama a função mailto
             window.location.href = `mailto:${emailDestino}?subject=${assunto}&body=${corpo}`;
         });
     }
@@ -1386,4 +1447,3 @@ document.head.appendChild(style);
     </script>
 </body>
 </html>
-
